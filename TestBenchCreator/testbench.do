@@ -1,3 +1,4 @@
+# Created by David Zemon
 # Adding wires
 add wave sim:/alu/Op
 add wave sim:/alu/Ci
