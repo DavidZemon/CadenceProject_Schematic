@@ -1,0 +1,15 @@
+# Compile of 2to1MUX.vhd was successful.
+# Compile of 4b_2to1MUX.vhd was successful.
+# Compile of 4b_4to1MUX.vhd was successful.
+# Compile of 4b_and.vhd was successful.
+# Compile of 4b_nand.vhd was successful.
+# Compile of 4b_nor.vhd was successful.
+# Compile of 4b_not.vhd was successful.
+# Compile of 4b_or.vhd was successful.
+# Compile of 4b_xnor.vhd was successful.
+# Compile of 4b_xor.vhd was successful.
+# Compile of 4to1MUX.vhd was successful.
+# Compile of ALU.vhd was successful.
+# 12 compiles, 0 failed with no errors. 
+# Load canceled
+vsim -do Lab5_run_msim_gate_vhdl.do -l msim_transcript -i work.\\2to1MUX\\ work.\\4b_2to1MUX\\ work.\\4b_4to1MUX\\ work.\\4b_and\\ work.\\4b_nand\\ work.\\4b_nor\\ work.\\4b_not\\ work.\\4b_or\\ work.\\4b_xnor\\ work.\\4b_xor\\ work.\\4to1MUX\\ work.alu

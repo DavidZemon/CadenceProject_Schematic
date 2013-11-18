@@ -1,0 +1,110 @@
+# vsim -do Lab5_run_msim_gate_vhdl.do -l msim_transcript -i work.\\2to1MUX\\ work.\\4b_2to1MUX\\ work.\\4b_4to1MUX\\ work.\\4b_and\\ work.\\4b_nand\\ work.\\4b_nor\\ work.\\4b_not\\ work.\\4b_or\\ work.\\4b_xnor\\ work.\\4b_xor\\ work.\\4to1MUX\\ work.alu 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.\2to1MUX\(bdf_type)
+# Loading work.\4b_2to1MUX\(bdf_type)
+# Loading work.\4b_4to1MUX\(bdf_type)
+# Loading work.\4b_and\(bdf_type)
+# Loading work.\4b_nand\(bdf_type)
+# Loading work.\4b_nor\(bdf_type)
+# Loading work.\4b_not\(bdf_type)
+# Loading work.\4b_or\(bdf_type)
+# Loading work.\4b_xnor\(bdf_type)
+# Loading work.\4b_xor\(bdf_type)
+# Loading work.\4to1MUX\(bdf_type)
+# Loading work.alu(bdf_type)
+# ** Warning: (vsim-3473) Component instance "b2v_inst : \2to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /\4b_2to1MUX\ File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/4b_2to1MUX.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_inst1 : \2to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /\4b_2to1MUX\ File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/4b_2to1MUX.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_inst2 : \2to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /\4b_2to1MUX\ File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/4b_2to1MUX.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_inst3 : \2to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /\4b_2to1MUX\ File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/4b_2to1MUX.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_inst : \4to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /\4b_4to1MUX\ File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/4b_4to1MUX.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_inst1 : \4to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /\4b_4to1MUX\ File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/4b_4to1MUX.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_inst2 : \4to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /\4b_4to1MUX\ File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/4b_4to1MUX.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_inst3 : \4to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /\4b_4to1MUX\ File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/4b_4to1MUX.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_4to1_mux : \4b_4to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/ALU.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_A_2to1_mux : \4b_2to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/ALU.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_add_sub : adder_subtractor" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/ALU.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_B_2to1_mux : \4b_2to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/ALU.vhd
+# ** Warning: (vsim-3473) Component instance "b2v_main_2to1_mux : \4b_2to1mux\" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /alu File: /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/ALU.vhd
+# do Lab5_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/simulation/modelsim/work.mpf
+# 
+# vcom -93 -work work {Lab5.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity ALU
+# -- Compiling architecture structure of ALU
+# 
+../../TestBenchCreator/testbench.do
+# invalid command name "../../TestBenchCreator/testbench.do"
+do ../../TestBenchCreator/testbench.do
+# ** Error: (vish-4008) Object 'Ci' not found.
+# Error in macro ./../../TestBenchCreator/testbench.do line 8
+# ** Error: (vish-4008) Object 'Ci' not found.
+# 
+#     while executing
+# "force Ci 0"
+do ../../TestBenchCreator/testbench.do
+quit -sim
+vsim -do Lab5_run_msim_gate_vhdl.do -l msim_transcript -i work.alu
+# vsim -do Lab5_run_msim_gate_vhdl.do -l msim_transcript -i work.alu 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.alu(structure)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# do Lab5_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying /home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/simulation/modelsim/work.mpf
+# 
+# vcom -93 -work work {Lab5.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity ALU
+# -- Compiling architecture structure of ALU
+# 
+do ../../TestBenchCreator/testbench.do
