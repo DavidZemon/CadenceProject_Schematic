@@ -14,45 +14,44 @@
 
 -- PROGRAM		"Quartus II 64-Bit"
 -- VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
--- CREATED		"Mon Nov 18 20:09:03 2013"
+-- CREATED		"Mon Nov 18 20:09:45 2013"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
 
 LIBRARY work;
 
-ENTITY \2to1MUX\ IS 
+ENTITY testUnit IS 
 	PORT
 	(
+		S :  IN  STD_LOGIC;
 		A :  IN  STD_LOGIC;
 		B :  IN  STD_LOGIC;
-		S :  IN  STD_LOGIC;
 		F :  OUT  STD_LOGIC
 	);
-END \2to1MUX\;
+END testUnit;
 
-ARCHITECTURE bdf_type OF \2to1MUX\ IS 
+ARCHITECTURE bdf_type OF testUnit IS 
 
-SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
-SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC;
-SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
+COMPONENT \2to1mux\
+	PORT(A : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 S : IN STD_LOGIC;
+		 F : OUT STD_LOGIC
+	);
+END COMPONENT;
+
 
 
 BEGIN 
 
 
 
-SYNTHESIZED_WIRE_2 <= NOT(SYNTHESIZED_WIRE_0 AND A);
-
-
-F <= NOT(SYNTHESIZED_WIRE_1 AND SYNTHESIZED_WIRE_2);
-
-
-SYNTHESIZED_WIRE_1 <= NOT(B AND S);
-
-
-SYNTHESIZED_WIRE_0 <= NOT(S);
-
+b2v_inst : \2to1mux\
+PORT MAP(A => A,
+		 B => B,
+		 S => S,
+		 F => F);
 
 
 END bdf_type;
