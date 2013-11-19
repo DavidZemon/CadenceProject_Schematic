@@ -5,6 +5,7 @@ add wave sim:/ALU/A
 add wave sim:/ALU/B
 add wave sim:/ALU/F
 add wave sim:/ALU/Co
+force -drive sim:/ALU/Ci 0
 
 # A=0x00 & B=0x00
 force -drive sim:/ALU/Op(0) 0
@@ -261,6 +262,7 @@ force -drive sim:/ALU/B(0) 0
 force -drive sim:/ALU/B(1) 0
 force -drive sim:/ALU/B(2) 0
 force -drive sim:/ALU/B(3) 0
+force -drive sim:/ALU/Ci 0
 run 100
 
 # A=7 - B=0
@@ -275,6 +277,7 @@ force -drive sim:/ALU/B(0) 0
 force -drive sim:/ALU/B(1) 0
 force -drive sim:/ALU/B(2) 0
 force -drive sim:/ALU/B(3) 0
+force -drive sim:/ALU/Ci 0
 run 100
 
 # A=7 - B=3
@@ -289,6 +292,7 @@ force -drive sim:/ALU/B(0) 1
 force -drive sim:/ALU/B(1) 1
 force -drive sim:/ALU/B(2) 0
 force -drive sim:/ALU/B(3) 0
+force -drive sim:/ALU/Ci 0
 run 100
 
 # A=0 - B=1
@@ -303,6 +307,7 @@ force -drive sim:/ALU/B(0) 1
 force -drive sim:/ALU/B(1) 0
 force -drive sim:/ALU/B(2) 0
 force -drive sim:/ALU/B(3) 0
+force -drive sim:/ALU/Ci 0
 run 100
 
 # A=0 + 1

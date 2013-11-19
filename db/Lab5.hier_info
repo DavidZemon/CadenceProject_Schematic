@@ -59,6 +59,12 @@ F[3] <= 4b_2to1MUX:main_2to1_mux.F[3]
 
 |ALU|Adder_Subtractor:add_sub
 Co <= 1b_FullAdder:inst3.Co
+op => inst8.IN0
+op => inst7.IN1
+op => inst4.IN1
+op => inst5.IN1
+op => inst6.IN1
+Ci => inst8.IN1
 A[0] => 1b_FullAdder:inst.A
 A[1] => 1b_FullAdder:inst1.A
 A[2] => 1b_FullAdder:inst2.A
@@ -67,12 +73,6 @@ B[0] => inst7.IN0
 B[1] => inst4.IN0
 B[2] => inst5.IN0
 B[3] => inst6.IN0
-op => inst6.IN1
-op => inst5.IN1
-op => inst4.IN1
-op => inst7.IN1
-op => inst8.IN0
-Ci => inst8.IN1
 S[0] <= 1b_FullAdder:inst.S
 S[1] <= 1b_FullAdder:inst1.S
 S[2] <= 1b_FullAdder:inst2.S

@@ -149,7 +149,7 @@ class ALU(object):
         s += writeBus(self.unit, self.op, self.ops["sub"])
         s += writeBus(self.unit, self.a, a)
         s += writeBus(self.unit, self.b, b)
-        # No need to clear carry - should be ignored
+        s += writeWire(self.unit, self.c, 0)
 
         return s
 
@@ -174,6 +174,7 @@ def testALU(out):
     alu = ALU()
 
     out.write(alu.start())
+    out.write(clearWire(alu.unit, alu.c))
     test(out, alu.opAnd(0, 0))
     test(out, alu.opAnd(0x5, 0xC))
     test(out, alu.opAnd(0xF, 0xF))
@@ -239,6 +240,44 @@ def test_4b_2to1_mux(out):
     test(out, s)
 
 
+def test_adder_subtracter(out):
+    unit = 'Adder_Subtractor'
+    A = ['A', 4]
+    B = ['B', 4]
+    C = 'Ci'
+    op = 'op'
+
+    def add(a, b, c):
+        s = "\n# A=%u + B=%u\n" % (a, b)
+        s += writeWire(unit, op, 0)
+        s += writeBus(unit, A, a)
+        s += writeBus(unit, B, b)
+        s += writeWire(unit, C, c)
+
+        return s
+
+    def sub(a, b):
+        s = "\n# A=%u - B=%u\n" % (a, b)
+        s += writeWire(unit, op, 1)
+        s += writeBus(unit, A, a)
+        s += writeBus(unit, B, b)
+        s += writeWire(unit, C, 0)
+        # No need to clear carry - should be ignored
+
+        return s
+
+    out.write(addAllWires(unit, [op, C, A, B, 'S', 'Co']))
+    test(out, add(0, 0, 0))
+    test(out, add(7, 4, 0))
+    test(out, add(7, 3, 1))
+    test(out, add(7, 0, 0))
+    test(out, add(7, 0, 1))
+    test(out, sub(0, 0))
+    test(out, sub(7, 0))
+    test(out, sub(7, 3))
+    test(out, sub(0, 1))
+
+
 def test_1b_2to1_mux(out):
     assert (isinstance(out, io.TextIOBase))
 
@@ -264,3 +303,6 @@ if "__main__" == __name__:
 
     f_test_alu = open("test_alu.do", 'w')
     testALU(f_test_alu)
+
+    f_test_adder = open("test_adder.do", 'w')
+    test_adder_subtracter(f_test_adder)
