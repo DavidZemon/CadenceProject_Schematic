@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 d/home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/simulation/modelsim
 Ealu
-Z1 w1384676079
+Z1 w1384829704
 Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
 Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 zUjlM<IUJVWSWg:L2<>ic3
 Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
@@ -21,7 +21,7 @@ VlSCOf0PQBbiKNEaTLK::X1
 Z11 OV;C;10.1d;51
 31
 !i10b 1
-Z12 !s108 1384743889.028277
+Z12 !s108 1384829750.162828
 Z13 !s90 -reportprogress|300|-93|-work|work|Lab5.vho|
 Z14 !s107 Lab5.vho|
 Z15 o-93 -work work -O0
@@ -34,10 +34,10 @@ R5
 R6
 R7
 DEx4 work 3 alu 0 22 lSCOf0PQBbiKNEaTLK::X1
-l115
+l108
 L65
-VSY@i9MY_MCAV=<Amb[2CS1
-!s100 4?bRKAk[M5?^8g@GMMa3_1
+V4F?[a<d42T;7zU=PnzBR33
+!s100 h635LaB7G6jOW`EX^iOGQ2
 R11
 31
 !i10b 1
