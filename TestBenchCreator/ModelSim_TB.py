@@ -1,4 +1,4 @@
-#/usr/bin/python
+#/usr/bin/python3
 # File:    ModelSim_TB.py
 # Author:  David Zemon
 # Project: TestBenchCreator
@@ -241,6 +241,8 @@ def test_4b_2to1_mux(out):
 
 
 def test_adder_subtracter(out):
+    assert (isinstance(out, io.TextIOBase))
+
     unit = 'Adder_Subtractor'
     A = ['A', 4]
     B = ['B', 4]
