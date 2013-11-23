@@ -1,0 +1,10 @@
+simulator lang=spectre
+// File: mux_1b_2to1_name_tb.txt
+//
+// Variables
+parameters VCC = 1.8
+parameters STEP = 10u
+parameters T_RF = 10p
+A (A 0  ) vsource type=pwl wave=[0*STEP 0   1*STEP-T_RF 0   1*STEP VCC 2*STEP-T_RF VCC 2*STEP 0   3*STEP-T_RF 0   3*STEP VCC 4*STEP-T_RF VCC 4*STEP 0   5*STEP-T_RF 0   5*STEP VCC 6*STEP-T_RF VCC 6*STEP 0   7*STEP-T_RF 0   7*STEP VCC 8*STEP-T_RF VCC ]
+B (A 0  ) vsource type=pwl wave=[0*STEP 0   1*STEP-T_RF 0   1*STEP 0   2*STEP-T_RF 0   2*STEP VCC 3*STEP-T_RF VCC 3*STEP VCC 4*STEP-T_RF VCC 4*STEP 0   5*STEP-T_RF 0   5*STEP 0   6*STEP-T_RF 0   6*STEP VCC 7*STEP-T_RF VCC 7*STEP VCC 8*STEP-T_RF VCC ]
+S (S 0  ) vsource type=pwl wave=[0*STEP 0   1*STEP-T_RF 0   1*STEP 0   2*STEP-T_RF 0   2*STEP 0   3*STEP-T_RF 0   3*STEP 0   4*STEP-T_RF 0   4*STEP VCC 5*STEP-T_RF VCC 5*STEP VCC 6*STEP-T_RF VCC 6*STEP VCC 7*STEP-T_RF VCC 7*STEP VCC 8*STEP-T_RF VCC ]
