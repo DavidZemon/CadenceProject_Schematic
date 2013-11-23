@@ -1,5 +1,5 @@
 #/usr/bin/python
-# File:    TestBenchCreator.py
+# File:    ModelSim_TB.py
 # Author:  David Zemon
 # Project: TestBenchCreator
 #

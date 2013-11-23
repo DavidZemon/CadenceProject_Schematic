@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "11/18/2013 20:55:04"
+-- DATE "11/18/2013 23:48:48"
 
 -- 
 -- Device: Altera EP2C8T144C6 Package TQFP144
@@ -476,11 +476,12 @@ PORT MAP (
 -- Location: LCCOMB_X10_Y10_N30
 \main_2to1_mux|inst3|inst1~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \main_2to1_mux|inst3|inst1~0_combout\ = (\Op~combout\(1) & (\A~combout\(3) $ ((\B~combout\(3))))) # (!\Op~combout\(1) & ((\A~combout\(3) & ((\B~combout\(3)) # (\Op~combout\(0)))) # (!\A~combout\(3) & (\B~combout\(3) & \Op~combout\(0)))))
+-- \main_2to1_mux|inst3|inst1~0_combout\ = (\Op~combout\(1) & (\A~combout\(3) $ (\B~combout\(3) $ (!\Op~combout\(0))))) # (!\Op~combout\(1) & ((\A~combout\(3) & ((\B~combout\(3)) # (\Op~combout\(0)))) # (!\A~combout\(3) & (\B~combout\(3) & 
+-- \Op~combout\(0)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0111110001101000",
+	lut_mask => "0111110011000010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -553,11 +554,12 @@ PORT MAP (
 -- Location: LCCOMB_X10_Y10_N12
 \main_2to1_mux|inst2|inst1~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \main_2to1_mux|inst2|inst1~0_combout\ = (\B~combout\(2) & ((\A~combout\(2) & (!\Op~combout\(1))) # (!\A~combout\(2) & ((\Op~combout\(1)) # (\Op~combout\(0)))))) # (!\B~combout\(2) & (\A~combout\(2) & ((\Op~combout\(1)) # (\Op~combout\(0)))))
+-- \main_2to1_mux|inst2|inst1~0_combout\ = (\B~combout\(2) & ((\A~combout\(2) & ((!\Op~combout\(0)) # (!\Op~combout\(1)))) # (!\A~combout\(2) & ((\Op~combout\(0)))))) # (!\B~combout\(2) & ((\A~combout\(2) & ((\Op~combout\(0)))) # (!\A~combout\(2) & 
+-- (\Op~combout\(1) & !\Op~combout\(0)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0110111001101000",
+	lut_mask => "0110111010011000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -690,11 +692,12 @@ PORT MAP (
 -- Location: LCCOMB_X10_Y10_N26
 \main_2to1_mux|inst1|inst1~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \main_2to1_mux|inst1|inst1~0_combout\ = (\B~combout\(1) & ((\A~combout\(1) & (!\Op~combout\(1))) # (!\A~combout\(1) & ((\Op~combout\(1)) # (\Op~combout\(0)))))) # (!\B~combout\(1) & (\A~combout\(1) & ((\Op~combout\(1)) # (\Op~combout\(0)))))
+-- \main_2to1_mux|inst1|inst1~0_combout\ = (\B~combout\(1) & ((\A~combout\(1) & ((!\Op~combout\(0)) # (!\Op~combout\(1)))) # (!\A~combout\(1) & ((\Op~combout\(0)))))) # (!\B~combout\(1) & ((\A~combout\(1) & ((\Op~combout\(0)))) # (!\A~combout\(1) & 
+-- (\Op~combout\(1) & !\Op~combout\(0)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0110111001101000",
+	lut_mask => "0110111010011000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -768,11 +771,12 @@ PORT MAP (
 -- Location: LCCOMB_X8_Y11_N0
 \main_2to1_mux|inst|inst1~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \main_2to1_mux|inst|inst1~0_combout\ = (\A~combout\(0) & ((\B~combout\(0) & (!\Op~combout\(1))) # (!\B~combout\(0) & ((\Op~combout\(1)) # (\Op~combout\(0)))))) # (!\A~combout\(0) & (\B~combout\(0) & ((\Op~combout\(1)) # (\Op~combout\(0)))))
+-- \main_2to1_mux|inst|inst1~0_combout\ = (\A~combout\(0) & ((\B~combout\(0) & ((!\Op~combout\(0)) # (!\Op~combout\(1)))) # (!\B~combout\(0) & ((\Op~combout\(0)))))) # (!\A~combout\(0) & ((\B~combout\(0) & ((\Op~combout\(0)))) # (!\B~combout\(0) & 
+-- (\Op~combout\(1) & !\Op~combout\(0)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0110111001101000",
+	lut_mask => "0110111010011000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (

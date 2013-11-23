@@ -399,35 +399,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 704 504 832 600)
-	(text "4b_xnor" (rect 5 0 52 13)(font "Arial" (font_size 8)))
-	(text "xnor" (rect 8 81 32 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
-		(text "A[3..0]" (rect 21 27 58 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "B[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
-		(text "B[3..0]" (rect 21 43 58 56)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 128 32)
-		(output)
-		(text "F[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
-		(text "F[3..0]" (rect 70 27 107 40)(font "Arial" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 112 80))
-	)
-)
-(symbol
 	(rect 704 608 832 704)
 	(text "4b_xor" (rect 5 0 45 13)(font "Arial" (font_size 8)))
 	(text "xor" (rect 8 81 25 92)(font "Arial" ))
@@ -705,6 +676,35 @@ applicable agreement for further details.
 		(line (pt 14 37)(pt 31 37))
 		(line (pt 14 12)(pt 14 37))
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 704 504 832 600)
+	(text "4b_xnor" (rect 5 0 52 13)(font "Arial" (font_size 8)))
+	(text "xnor" (rect 8 81 32 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
+		(text "A[3..0]" (rect 21 27 58 40)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "B[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
+		(text "B[3..0]" (rect 21 43 58 56)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "F[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
+		(text "F[3..0]" (rect 70 27 107 40)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 80))
 	)
 )
 (connector

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Lab5
-Mon Nov 18 20:55:04 2013
+Mon Nov 18 23:48:48 2013
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Nov 18 20:55:04 2013 ;
+; EDA Netlist Writer Status ; Successful - Mon Nov 18 23:48:48 2013 ;
 ; Revision Name             ; Lab5                                  ;
 ; Top-level Entity Name     ; ALU                                   ;
 ; Family                    ; Cyclone II                            ;
@@ -84,13 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 18 20:55:03 2013
+    Info: Processing started: Mon Nov 18 23:48:48 2013
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Lab5 -c Lab5
 Info (204026): Generated files "Lab5.vho", "Lab5_fast.vho", "Lab5_vhd.sdo" and "Lab5_vhd_fast.sdo" in directory "/home/david/External/Documents/Courses/LAST-ONE-BITCHES/CpE311/Labs/Lab 5/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 814 megabytes
-    Info: Processing ended: Mon Nov 18 20:55:04 2013
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Mon Nov 18 23:48:48 2013
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
