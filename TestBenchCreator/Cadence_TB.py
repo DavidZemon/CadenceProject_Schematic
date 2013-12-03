@@ -194,6 +194,6 @@ if "__main__" == __name__:
     adderSubtracter_f = open(adderSubtracter_name, 'w')
     testAdderSubtracter(adderSubtracter_f, adderSubtracter_name)
 
-    mux_1b_2to1_name = "mux_1b_2to1_name_tb.txt"
+    mux_1b_2to1_name = "1b_2to1_mux_tb.txt"
     mux_1b_2to1_f = open(mux_1b_2to1_name, 'w')
     test_mux_1b_2to1(mux_1b_2to1_f, mux_1b_2to1_name)
