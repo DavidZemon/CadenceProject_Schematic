@@ -7,6 +7,7 @@
 
 Created with: PyCharm Community Edition
 """
+#noinspection PyUnresolvedReferences
 from sys import stdout
 from io import TextIOBase
 
@@ -161,6 +162,7 @@ def testAdderSubtracter(out, filename):
     box = AdderSubtractor(VCC, STEP, T_RF)
     box.add(0x0, 0x0, 0)
     box.add(0x5, 0x1, 1)
+    box.sub(0xF, 0x8)
 
     out.write(box.start(filename))
     out.write(box.dump())
